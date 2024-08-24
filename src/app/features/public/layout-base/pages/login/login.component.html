@@ -1,0 +1,39 @@
+<div class="header">
+  <h1 class="title-login">Sistema de Control de Planeaciones Docentes</h1>
+</div>
+
+<div class="background-container">
+  <div class="card-container">
+    <p-card [style]="{ 'width': '500px', 'height': '600px' }">
+      <ng-template pTemplate="header">
+        <div class="p-grid container-header">
+          <div class="p-col-12">
+            <p class="text-center title-header">Iniciar Sesión</p>
+          </div>
+        </div>
+      </ng-template>
+      <form [formGroup]="myForm">
+      <div class="flex flex-column gap-2 mt-4">
+        <label for="username">Username</label>
+        <input formControlName="username" pInputText id="username" />
+      </div>
+
+      <div class="flex flex-column gap-2 mt-4">
+        <label for="password">Clave de Acceso</label>
+        <input formControlName="password" pInputText id="password" type="password" />
+      </div>
+
+      <div class="container-btn mt-6">
+        <p-button (click)="login()" label="Aceptar" type="submit"></p-button>
+      </div>
+      </form>
+      <ng-template pTemplate="footer">
+        <div class="p-grid container-footer">
+          <div class="p-col-12">
+            <p class="text-center">BIENVENIDO</p>
+          </div>
+        </div>
+      </ng-template>
+    </p-card>
+  </div>
+</div>

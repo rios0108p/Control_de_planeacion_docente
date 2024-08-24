@@ -1,0 +1,59 @@
+.backgroud-container {
+  background: #EBF3FA !important;
+  display: grid;
+  height: 100vh;
+  margin: -22px -10px 0 -10px;
+}
+
+.container-header {
+  background: #0077A9 !important;
+  height: 3rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-footer {
+  height: 100% !important;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin: -22px -10px 0 -10px;
+  height: 150px;
+  display: grid;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../../../../assets/login/header.png');
+}
+
+.title-login {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: white;
+}
+
+.card-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.header-card {
+  background: blue;
+  height: 50px !important;
+}
+
+.container-btn {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-header {
+  color: white;
+}
+

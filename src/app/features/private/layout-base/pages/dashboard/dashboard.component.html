@@ -1,0 +1,35 @@
+<div class="container-header">
+  <div class="p-col-12 p-grid">
+    <div class="p-col-12">
+      <h2 class="text-center title-header pt-4">Te damos la bienvenida al Sistema de Control de Planeaciones Docente</h2>
+    </div>
+    <div class="p-col-12 pt-4 pl-3 pb-5">
+
+      <p-button class="p-col-6 ml-2 boton-usuario" label="Usuarios"></p-button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="p-col-12 grid contenedortarjeta">
+    <div class="p-col-4 container-courses">
+      <div class="btn-courses" *ngFor="let course of courses">
+        <p-button>
+          {{ course?.year }}
+        </p-button>
+      </div>
+    </div>
+    <div class="p-col-8 ml-6 mt-5 container-crd" [style]="{width: '70%'}">
+      <div *ngFor="let career of coursesList" class="mb-3 cards-style">
+        <p-card class="tarjeta" [style]="{ width: '200px' }">
+          <div class="p-col-12 grid materia">
+            <div class="icono-texto">
+              <h3>{{ career?.curso }}</h3>
+              <i class="pi pi-user" style="font-size: 25px; margin-left: 10px;"></i>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+</div>
